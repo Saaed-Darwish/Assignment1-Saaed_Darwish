@@ -11,7 +11,7 @@
 # function of multiplication
 def multiplication(multiply_value1, multiply_value2):
     '''
-    Addition of two values together
+    Multiplication of two values together
 
     Parameters:
     multiply_value1 -- the first value to be multiplied with the second value
