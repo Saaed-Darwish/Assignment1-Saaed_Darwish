@@ -160,3 +160,4 @@ if first_operator == '-':
 # calculated as result
 
 # answers & output
+print('The solution of the expression given is: ', result)
