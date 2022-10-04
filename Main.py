@@ -67,7 +67,7 @@ def division(divided_value1, divide_value2):
 # user prompts
 print('Calculator - solves expressions with three integer values and two operators in the form: A (operator) B (operator) C')
 print('Valid integer values are an element of the natural numbers')
-print('Valid operators include: + (add), - (subtract), * (multiply), / (divide)')
+print('Valid operators include: + (add), - (subtract), * (multiply), / (divide)\n')
 
 while True:                                                         # continually do this (checking for valid inputs)
     try:                                                               # try command - if an error occurs will not terminate
@@ -115,6 +115,8 @@ while True:
     else:
         break
 
+print('\nEntered expression is:', first_value, first_operator, second_value, second_operator, third_value)
+print('\n')
 # precedence determination
 
 if first_operator == '*':
