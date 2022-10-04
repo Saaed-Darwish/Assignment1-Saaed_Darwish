@@ -9,7 +9,7 @@
 # function of subtraction
 def subtraction(subtract_value1, subtract_value2):
     '''
-    Addition of two values together
+    Subtraction of two values together
 
     Parameters:
     subtract_value1 -- the first value to be subtracted by the second value
