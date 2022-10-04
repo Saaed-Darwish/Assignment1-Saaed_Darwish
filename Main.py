@@ -46,7 +46,7 @@ def multiplication(multiply_value1, multiply_value2):
     Returns:
     multiplied_value -- the value of the multiplication of the two values
     '''
-    multiplied_value = multiply_value1 + multiply_value2
+    multiplied_value = multiply_value1 * multiply_value2
     return multiplied_value
 
 # function of division
@@ -117,6 +117,46 @@ while True:
 
 # precedence determination
 
-# calculations with functions
+if first_operator == '*':
+    if second_operator == '*':
+        result = multiplication(multiplication(first_value, second_value), third_value)
+    if second_operator == '/':
+        result = division(multiplication(first_value, second_value), third_value)
+    if second_operator == '+':
+        result = addition(multiplication(first_value, second_value), third_value)
+    if second_operator == '-':
+        result = subtraction(multiplication(first_value, second_value), third_value)
+
+if first_operator == '/':
+    if second_operator == '*':
+        result = multiplication(division(first_value, second_value), third_value)
+    if second_operator == '/':
+        result = division(division(first_value, second_value), third_value)
+    if second_operator == '+':
+        result = addition(division(first_value, second_value), third_value)
+    if second_operator == '-':
+        result = subtraction(division(first_value, second_value), third_value)
+
+if first_operator == '+':
+    if second_operator == '*':
+        result = addition(multiplication(second_value, third_value), first_value)
+    if second_operator == '/':
+        result = addition(division(second_value, third_value), first_value)
+    if second_operator == '+':
+        result = addition(addition(first_value, second_value), third_value)
+    if second_operator == '-':
+        result = subtraction(addition(first_value, second_value), third_value)
+
+if first_operator == '-':
+    if second_operator == '*':
+        result = subtraction(multiplication(second_value, third_value), first_value)
+    if second_operator == '/':
+        result = subtraction(division(second_value, third_value), first_value)
+    if second_operator == '+':
+        result = addition(subtraction(first_value, second_value), third_value)
+    if second_operator == '-':
+        result = subtraction(subtraction(first_value, second_value), third_value)
+
+# calculated as result
 
 # answers & output
