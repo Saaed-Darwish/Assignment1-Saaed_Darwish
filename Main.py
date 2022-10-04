@@ -65,6 +65,22 @@ def division(divided_value1, divide_value2):
     return division_value
 
 # user prompts
+print('Calculator - solves expressions with three integer values and two operators')
+print('Valid integer values are an element of the natural numbers')
+print('Valid operators include: + (add), - (subtract), * (multiply), / (divide)')
+
+while True:                                                         # continually do this (checking for valid inputs)
+    try:                                                               # try command - if an error occurs will not terminate
+        print('Enter the first value:', end=' ')                       # prompt user for first value
+        first_value = int(input())                                     # read user input for first value
+    except ValueError:                                                 # if there is a value error from converting input into integer
+        print('Not an integer ex: -2, 0, 1')                           # telling user the input is not valid
+    else:                                                              # if there is no error then a valid integer input was made therefore break
+        break
+    
+while True:
+    break
+
 
 # precedence determination
 
