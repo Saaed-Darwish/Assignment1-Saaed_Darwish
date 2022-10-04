@@ -87,7 +87,33 @@ while True:                                                             # contin
         break
     print('invalid operator\nValid operators include: + (add), - (subtract), * (multiply), / (divide)\n')   # did not exit while loop therefore invalid operator and while loop will restart on its own
 
+while True:
+    try:
+        print('Enter the second value:', end=' ')
+        second_value = int(input())
+    except ValueError:
+        print('Not an integer ex: -2, 0, 1\n')
+        continue
+    else:
+        break
+    
+valid_operators = ['+', '-', '*', '/']
+while True:
+    print('Enter the second operator:', end=' ')
+    second_operator = input()
+    if second_operator in valid_operators:
+        break
+    print('invalid operator\nValid operators include: + (add), - (subtract), * (multiply), / (divide)\n')
 
+while True:
+    try:
+        print('Enter the third value:', end=' ')
+        third_value = int(input())
+    except ValueError:
+        print('Not an integer ex: -2, 0, 1\n')
+        continue
+    else:
+        break
 
 # precedence determination
 
